@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Lemonada|Raleway');
+.Raleway { font-family: 'Raleway', sans-serif; }
+.Lemonada { font-family: 'Lemonada', cursive; }
+
+/****************************************************************
+ * Example of layering CSS depending on 'display type'
+ * ---------------------------------------------------------------
+ * @import url("fineprint.css") print;
+ * @import url("bluish.css") projection, tv;
+ * @import 'custom.css';
+ * @import url("chrome://communicator/skin/");
+ * @import "common.css" screen, projection;
+ * @import url('landscape.css') screen and (orientation:landscape);
+ *****************************************************************
+ * @import
+ * https://developer.mozilla.org/en-US/docs/Web/CSS/@import
+ *****************************************************************
+ * Flex Box
+ * https://developer.mozilla.org/en-US/docs/Web/CSS/flex
+ ******************************************************************
+ * Pattern Backgrounds
+ * http://lea.verou.me/css3patterns
+ *****************************************************************/
+
+html {
+    background-color: #556;
+    background-image: linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445), linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445), linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445), linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445), linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a), linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a);
+    background-size: 80px 140px;
+    background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+    color: #eee;
+}
+
+a, a:active, a:visited, a:hover {
+    text-decoration: none;
+    color: #eee;
+}
+
+p, h1, h2 {
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+}
+
+ul {
+    display: block;
+    padding: 0;
+    list-style-type: none;
+}
+
+li {
+    box-sizing: border-box;
+    border-bottom: solid 1px rgba(100, 100, 100, 0.5);
+    width: 100%;
+    text-align: center;
+    padding: 10px 0px;
+    border-radius: 20px;
+    cursor: pointer;
+    background: linear-gradient(0deg, #5164a1, #8491bd);
+    box-shadow: -1px 1px rgba(100, 100, 100, 0.1);
+}
+
+h1 {
+    text-shadow: -2px 2px rgba(200, 200, 200, 0.5);
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+h3 {
+    font-style: italic;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 5px black;
+    margin: 20px;
+}
+
+header {
+    background-color: #5164a1;
+    color: #fff;
+    flex-direction: row;
+    border-radius: 10px 10px 0 0;
+}
+
+#container {
+    background-color: #8491bd;
+    display: inline-flex;
+    flex-direction: row;
+    height: inherit;
+    padding: 0px 10px;
+}
+
+nav {
+    flex-direction: column;
+    padding: inherit;
+}
+
+#content {
+    flex-direction: column;
+    padding: inherit;
+    color: black;
+}
+
+.card {
+    background-color: #cfd8dc;
+    padding: 2px 20px;
+    margin: 5px 0;
+    border-radius: 7px;
+    box-shadow: 0 5px 10px #666;
+}
+
+footer {
+    background-color: #5164a1;
+    text-align: center;
+    color: #eee;
+    padding: 10px;
+}

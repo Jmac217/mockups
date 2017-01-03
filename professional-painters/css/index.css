@@ -1,0 +1,29 @@
+.red{color:#c41230;}
+.red-inverse{color:#FFF;background-color:#c41230;}
+.blue{color:#004b8d;}
+.blue-inverse{color:#FFF;background-color:#004b8d;}
+.lt-blue{color:#3e6e93;}
+.lt-blue-inverse{color:#FFF;background-color:#3e6e93;}
+.text{opacity:1;}
+.header{margin:20px 0px 10px 0px;}
+.paint-bullet{list-style-image:url("http://Codefront.Design/ProfessionalPainters/res/paint-bullet.png");}
+.phone-number{font-weight:bold;}
+.banner{background:url("http://Codefront.Design/ProfessionalPainters/res/exterior01.png");background-position:left bottom;background-size:cover;text-align:center;border-top:20px solid #c41230;border-bottom:20px solid #004b8d;margin-bottom:30px;padding:20px;}
+.backdrop{background-color:rgba(255,255,255,0.9);padding:30px 3px 3px 3px;}
+.border-top{display:block;left:auto;margin:auto;width:75%;height:auto;border-top:solid 1px #c41230;}
+.promo{padding:10px 0px;margin-bottom:10px;opacity:.9;}
+.promo>*{font-weight:bold;}
+.promo>p{margin:1px 0px;}
+.promo>h1{font-size:58px;line-height:40px;}
+.promo>h6{font-size:12px;line-height:10px;}
+.slogan{font-size:25px;}
+.checkmark{display:inline-block;background-image:url("http://Codefront.Design/ProfessionalPainters/res/tick.png");height:16px;width:16px;margin-right:5px;}
+.footnote{box-sizing:border-box;padding:20px 0px 1px 0px;opacity:.8;}
+.footer{border-bottom:solid 5px #004b8d;font-size:28px;text-align:center;}
+input[type="button"]{display:inline-block;background-color:#cc0033;border:none;border-radius:2px;color:#FFF;padding:6px 28px;text-align:center;text-decoration:none;font-size:20px;cursor:pointer;font-weight:bold;margin:15px 0px;}
+*{font-family:helvetica;}
+a{color:inherit;}
+label{margin-right:0px;padding-right:0px;font-size:15px;text-align:right;line-height:36px;}
+input{box-sizing:border-box;border-radius:1px;border:solid 1px #DDD;font-size:18px;}
+#modal{display:none;}
+#error{display:none;}
