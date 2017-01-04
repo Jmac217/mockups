@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Lemonada|Raleway');
-.Raleway { font-family: 'Raleway', sans-serif; }
-.Lemonada { font-family: 'Lemonada', cursive; }
+.Raleway {
+    font-family: 'Raleway', sans-serif;
+}
+
+.Lemonada {
+    font-family: 'Lemonada', cursive;
+}
 
 /****************************************************************
  * Example of layering CSS depending on 'display type'
@@ -23,10 +28,9 @@
  *****************************************************************/
 
 html {
-    background-color: #556;
-    background-image: linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445), linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445), linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445), linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445), linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a), linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a);
-    background-size: 80px 140px;
-    background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+    background: linear-gradient(#ffffff 50%, rgba(255, 255, 255, 0) 0) 0 0, radial-gradient(circle closest-side, #FFFFFF 53%, rgba(255, 255, 255, 0) 0) 0 0, radial-gradient(circle closest-side, #FFFFFF 50%, rgba(255, 255, 255, 0) 0) 55px 0 #48B;
+    background-size: 110px 200px;
+    background-repeat: repeat-x;
     color: #eee;
 }
 
@@ -74,7 +78,7 @@ body {
     display: flex;
     flex-direction: column;
     box-shadow: 0 5px 5px black;
-    margin: 20px;
+    margin: 20px 20%;
 }
 
 header {
@@ -82,6 +86,7 @@ header {
     color: #fff;
     flex-direction: row;
     border-radius: 10px 10px 0 0;
+    box-shadow: 0 2px white;
 }
 
 #container {
@@ -116,4 +121,5 @@ footer {
     text-align: center;
     color: #eee;
     padding: 10px;
+    box-shadow: 0 2px 5px black;
 }
