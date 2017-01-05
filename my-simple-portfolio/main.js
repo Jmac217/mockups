@@ -7,14 +7,24 @@ $(document).ready(function() {
         {
             "title": "About Me",
             "head": "About Me",
-            "body": "Dolorum nobis nostrum perferendis recusandae delectus accusamus rerum tempore, voluptates soluta. Quaerat omnis explicabo aliquam at, minima rem, quod aut consectetur velit."
+            "body": "I <3 CSS"
         },
         {
             "title": "Contact",
             "head": "Contact",
+            "body": "jordanelder10@gmail.com"
+        },
+        {
+            "title": "Extra",
+            "head": "Easily added in JSON",
             "body": "Similique non saepe velit labore pariatur, quo iusto in id excepturi, debitis tempora, porro suscipit commodi explicabo mollitia quaerat impedit ex praesentium."
         },
     ];
+    $.each(links, function(k, v){
+       $('nav > ul').append(`
+         <li><a href="#" class="note">`+v.title+`</a></li>
+       `);
+    });
     $("a").click(function() {
         for (let i of links) {
             if (i.title === $(this).text()) {
